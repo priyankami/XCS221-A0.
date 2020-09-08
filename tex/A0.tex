@@ -1,0 +1,44 @@
+\def\due{No due date}
+\def\assignmentnum{0 }
+\def\assignmentname{Foundations}
+\def\assignmenttitle{XCS221 Assignment \assignmentnum --- \assignmentname}
+
+
+\input{macros}
+\input{points_macros}
+
+\begin{document}
+
+\pagestyle{myheadings} \markboth{}{\assignmenttitle}
+
+{\huge\noindent \assignmenttitle}
+
+\ruleskip
+
+% {\bf Due {\due }.}
+
+\medskip
+
+\input{00-instructions/00-main}
+
+\ruleskip
+
+\clearpage
+
+Welcome to your first CS221 assignment! The goal of this assignment is to
+sharpen your math and programming skills needed for this class. If you meet the
+prerequisites, you should find these problems relatively innocuous. Some of
+these problems will occur again as subproblems of later homeworks, so make sure
+you know how to do them.
+
+\begin{enumerate}[wide, labelindent=0pt]
+
+  \input{01-optimization-and-probability/00-main}
+  \clearpage
+  \input{02-complexity/00-main}
+  \clearpage
+  \input{03-programming/00-main}
+
+\end{enumerate}
+
+\end{document}
