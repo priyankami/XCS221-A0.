@@ -13,3 +13,8 @@ take the derivative of $L(p)$, but it is cleaner and more natural to
 differentiate $\log L(p)$. You can verify for yourself that the value of $p$
 which maximizes $\log L(p)$ must also maximize $L(p)$ (you are not required to
 prove this in your solution).}
+
+🐍
+import re
+with open('submission.tex') as f: print((re.search(r'% 📝_1d(.*?)% 📝_1d', f.read(), re.DOTALL)).group(1))
+🐍

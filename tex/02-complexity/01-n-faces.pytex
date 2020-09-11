@@ -8,3 +8,8 @@ Picasso portraits too, there are no constraints on the location or size of the
 rectangles. How many possible faces (choice of its component rectangles) are
 there? In general, we only care about asymptotic complexity, so give your answer
 in the form of $O(n^c)$ or $O(c^n)$ for some integer $c$.
+
+🐍
+import re
+with open('submission.tex') as f: print((re.search(r'% 📝_2a(.*?)% 📝_2a', f.read(), re.DOTALL)).group(1))
+🐍

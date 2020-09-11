@@ -11,3 +11,8 @@ Give your answer as a function of $n$. For example: if $n = 3$, then the answer 
 \item take one step, take two steps
 \item take three steps.
 \end{enumerate}
+
+🐍
+import re
+with open('submission.tex') as f: print((re.search(r'% 📝_2c(.*?)% 📝_2c', f.read(), re.DOTALL)).group(1))
+🐍

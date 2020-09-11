@@ -9,3 +9,8 @@ Please provide a formal proof explaining your answer.
 
 {\em Hint: You may find it helpful to refactor the expressions so that they
 are maximizing the same quantity over different sized sets.}
+
+🐍
+import re
+with open('submission.tex') as f: print((re.search(r'% 📝_1b(.*?)% 📝_1b', f.read(), re.DOTALL)).group(1))
+🐍

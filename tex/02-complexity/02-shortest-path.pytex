@@ -7,3 +7,8 @@ cost of touching position $(i, j)$, and assume it takes constant time to
 compute. Note that $c(i, j)$ can be negative. Give an algorithm for computing
 the minimum cost in the most efficient way. What is the runtime (just give the
 big-O)?
+
+🐍
+import re
+with open('submission.tex') as f: print((re.search(r'% 📝_2b(.*?)% 📝_2b', f.read(), re.DOTALL)).group(1))
+🐍

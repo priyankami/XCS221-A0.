@@ -18,3 +18,8 @@ this problem using scalars in place of vectors and derivatives in place of
 gradients. Not everything for scalars goes through for vectors, but the two
 should at least be consistent with each other (when $d=1$). Do not write out
 summation over dimensions, because that gets tedious.}
+
+🐍
+import re
+with open('submission.tex') as f: print((re.search(r'% 📝_1e(.*?)% 📝_1e', f.read(), re.DOTALL)).group(1))
+🐍

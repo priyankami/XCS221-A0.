@@ -7,3 +7,8 @@ roll a 6, you win $b$ points. You do not win or lose any points if you roll a 3,
 you will have when you stop?
 
 {\em Hint: We recommend defining a recurrence.}
+
+🐍
+import re
+with open('submission.tex') as f: print((re.search(r'% 📝_1c(.*?)% 📝_1c', f.read(), re.DOTALL)).group(1))
+🐍
