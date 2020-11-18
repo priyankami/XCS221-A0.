@@ -82,9 +82,9 @@ class Test_3c(GradedTestCase):
     random.seed(42)
     for _ in range(10):
       sentence = genSentence(3, 5)
-      def comp(test_func):
-        return test_func(sentence)
-      self.compare_with_solution_or_wait(submission, 'mutateSentences', comp)
+      solution_mutateSentences = self.run_with_solution_if_possible(submission, lambda sub_or_sol:sub_or_sol.mutateSentences(sentence))
+      self.assertEqual(sorted(solution_mutateSentences),
+                       sorted(submission.mutateSentences(sentence)))
 
   @graded(is_hidden=True, student_feedback=NO_POINTS_STATEMENT)
   def test_2(self):
@@ -92,9 +92,9 @@ class Test_3c(GradedTestCase):
     random.seed(42)
     for _ in range(10):
       sentence = genSentence(25, 10)
-      def comp(test_func):
-        return test_func(sentence)
-      self.compare_with_solution_or_wait(submission, 'mutateSentences', comp)
+      solution_mutateSentences = self.run_with_solution_if_possible(submission, lambda sub_or_sol:sub_or_sol.mutateSentences(sentence))
+      self.assertEqual(sorted(solution_mutateSentences),
+                       sorted(submission.mutateSentences(sentence)))
 class Test_3d(GradedTestCase):
 
   @graded(student_feedback=NO_POINTS_STATEMENT)
